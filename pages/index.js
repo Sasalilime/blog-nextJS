@@ -6,7 +6,7 @@ export default function Home() {
             <h1> Bienvenue sur Code !</h1>
             <span>Le blog des développeurs...</span>
             <div className="row mt-5">
-                <div className="col-12 col-sm-6">
+                <div className="col-12 col-sm-6" style={{minHeight:'200px'}}>
                     <div className="card w-100 h-100">
                         <div className="card-body">
                             <h5 className="card-title">
@@ -22,7 +22,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-sm-6">
+                <div className="col-12 col-sm-6" style={{minHeight:'200px'}}>
                     <div className="card w-100 h-100">
                         <div className="card-body">
                             <h5 className="card-title">
