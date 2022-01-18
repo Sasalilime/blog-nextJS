@@ -46,6 +46,7 @@ export const getStaticPaths = async () => {
     const users = await data.json();
 
     const paths = users.map(item => ({
+        //params: user: on l'appelle ainsi car le fichier.js s'appelle pareil et on informe next que l'on veut créer une page qui s'appelle
         params: {user: item.id.toString()}
     }));
 
