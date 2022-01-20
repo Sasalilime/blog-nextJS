@@ -1,13 +1,19 @@
 import React from 'react';
+import Head from 'next/head';
 
 const Article = (props) => {
 
     return (
-        <div className="container px-4 pt-5 ">
-            <h1 className="text-center mb-4">{props.article.title}</h1>
-            <p className="card-body">{props.article.body}</p>
+        <>
+            <Head>
+                <title>{props.article.title}</title>
+            </Head>
+            <div className="container px-4 pt-5 ">
+                <h1 className="text-center mb-4">{props.article.title}</h1>
+                <p className="card-body">{props.article.body}</p>
 
-        </div>
+            </div>
+        </>
     );
 };
 
